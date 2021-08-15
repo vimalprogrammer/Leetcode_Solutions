@@ -1,5 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+Test Case: arr = [3,2,3]
+           target = 6
+
+           Output: [0,2] --> ar[0]+ar[2] = 3+3=6;
+*/
 
 class Solution {
 public:
