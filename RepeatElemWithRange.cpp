@@ -26,3 +26,24 @@ int main()
         cout<<it<<" ";
     return 0;
 }
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    
+    vector<int>ar={2,5,9,6,3,8,2,9,7,1};
+    int n=ar.size(); 
+    int a[n]={0};
+    for(int i=0;i<n;i++)
+    {
+        a[ar[i]]+=1;
+        if(a[ar[i]]!=1)
+        {
+            cout<<ar[i];
+            break;
+        }
+    }
+    return 0;
+}
