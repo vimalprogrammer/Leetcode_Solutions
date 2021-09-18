@@ -47,3 +47,38 @@ int main()
     }
     return 0;
 }
+
+/*-----------------NAIVE APPROACH--------------------------*/
+
+#include <bits/stdc++.h>
+using namespace std;
+int repeating_element(vector<int>arr, int n)
+{
+int i,j;
+for(i = 0; i < n; i++)
+{
+    int flag=0;
+    for(j = 0; j < n; j++)
+    {
+        if(arr[i] == arr[j] && i != j)
+        {   
+            return arr[i];
+        }
+    }
+/* For no repeative just break the above if cond for every iter
+if(j == n )
+    cout<< arr[i] << endl;
+
+*/
+}
+return -1;
+}
+int main()
+{
+vector<int>arr={2,5,9,6,3,8,9,7,1};
+int n=arr.size();
+int res=repeating_element(arr,n);
+cout<<res;
+return 0;
+}
+
